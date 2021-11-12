@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: path
-        run: pwd
+        run: |
+          pwd
+          ls -lha
         
       - name: Run tests for Zad1
         run: python Zad1_tests.py
