@@ -9,12 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Validate version
-        run: python --version
-      - name: path
-        run: |
-          pwd
-          ls -lha
+      - name: Python3.10
+        run: curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
         
       - name: Run tests for Zad1
         run: python Zad1_tests.py
