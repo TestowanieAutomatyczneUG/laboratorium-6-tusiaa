@@ -1,7 +1,7 @@
 
 name: CI
 
-on: release
+on: [release, push, pull_request]
 
 jobs:
   tests:
@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run tests for Zad1
-        run: python -m unittest Zad1_tests.py
+        run: python Zad1_tests.py
 
       - name: Run tests for Zad2
-        run: python -m unittest Zad2_tests.py
+        run: python Zad2_tests.py
         
       - name: Run tests for Zad3
-        run: python -m unittest Zad3_tests.py
+        run: python Zad3_tests.py
         
         
         
