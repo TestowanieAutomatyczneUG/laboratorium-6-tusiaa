@@ -8,6 +8,7 @@ jobs:
     name: Tests
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: path
         run: |
           pwd
