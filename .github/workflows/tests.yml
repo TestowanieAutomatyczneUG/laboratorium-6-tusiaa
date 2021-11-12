@@ -8,20 +8,18 @@ jobs:
     name: Tests
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: path
         run: pwd
         
       - name: Run tests for Zad1
         run: python Zad1_tests.py
-        working-directory: ./Tests
 
       - name: Run tests for Zad2
         run: python Zad2_tests.py
-        working-directory: ./Tests
         
       - name: Run tests for Zad3
         run: python Zad3_tests.py
-        working-directory: ./Tests
         
         
         
