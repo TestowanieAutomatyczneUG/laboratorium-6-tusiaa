@@ -1,12 +1,12 @@
 
 name: CI
 
-on: [release, push, pull_request]
+on: [release, push, pull_request, workflow_dispatch]
 
 jobs:
   tests:
     name: Tests
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: path
         run: pwd
