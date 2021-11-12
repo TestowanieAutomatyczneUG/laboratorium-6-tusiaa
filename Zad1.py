@@ -9,4 +9,3 @@ class hamming:
             if b[i] != a[i]:
                 d += 1
         return d
-        
