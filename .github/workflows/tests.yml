@@ -1,7 +1,7 @@
 
 name: CI
 
-on: [release, push, pull_request, workflow_dispatch]
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   tests:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Python3.10
-        run: curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
+        run: apt-get install python3.10
         
       - name: Run tests for Zad1
         run: python Zad1_tests.py
