@@ -9,16 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+      - name: Python3.10
+        run: sudo apt-get install python3.10
         
       - name: Run tests for Zad1
-        run: python3.10 Zad1_tests.py
+        run: python Zad1_tests.py
 
       - name: Run tests for Zad2
-        run: python3.10 Zad2_tests.py
+        run: python Zad2_tests.py
         
       - name: Run tests for Zad3
-        run: python3.10 Zad3_tests.py
+        run: python Zad3_tests.py
         
         
         
