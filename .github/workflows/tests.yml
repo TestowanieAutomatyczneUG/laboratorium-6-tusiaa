@@ -1,7 +1,7 @@
 
 name: CI
 
-on: release
+on: [release, push, pull_request]
 
 jobs:
   tests:
