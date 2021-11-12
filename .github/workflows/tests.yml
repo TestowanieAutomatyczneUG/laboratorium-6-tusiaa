@@ -9,14 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+            python-version: '3.10'
         
       - name: Run tests for Zad1
         run: python Zad1_tests.py
 
       - name: Run tests for Zad2
         run: python Zad2_tests.py
-        with:
-          python-version: '3.10'
+        
         
       - name: Run tests for Zad3
         run: python Zad3_tests.py
