@@ -58,3 +58,9 @@ class RomanNumeralsTest(unittest.TestCase):
 
     def test_3000_is_three_m_s(self):
         self.assertEqual(roman(3000), "MMM")
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+    
