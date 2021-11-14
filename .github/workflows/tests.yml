@@ -21,7 +21,9 @@ jobs:
         
         
       - name: Run tests for Zad3
-        run: python Zad3_tests.py
+        run: |
+          pip3 install assertpy
+          python Zad3_tests.py
         
         
         
